@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link href='accordion.css' rel='stylesheet'>
+        <script src='accordion.js'></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <section id="guides">
+                <h2 class="guides_headline">3 guides <br>to <br id="tablet_headline"><label class="reds">get you <br>started</span></h2>
+            <div class="guide_container">
+                <ul id="toggle-view">
+                    <li >
+                        <h2><span class="heading">Guide 1</span></h2>
+                        <span class="plus">
+                                    <img class="close" src="//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/plus-button.png">
+                                    <!-- <a onclick="logLink('landing:p90x:web:index:ola:bbod:guides:fitness');" href="#fitness"> -->
+                                       <img class="open" src="//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/minus-button.png">
+                                    </a>
+                                </span>
+                        <div class="tony">
+                            <!--<h3>Guide 1:</h3>-->
+                            <h3>P90X <label class="reds">fitness guide</label></h3>
+                            <p>P90X will be your gym and health club for the next 90 days. The P90X Fitness Guide outlines the entire program, shows you how to do each exercise with proper form, and teaches you how to customize P90X to reach your personal fitness goals.</p>
+                            <div class="devices"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>
+                            <span class="heading">Guide 2</span>
+                        </h2>
+                        <span class="plus">
+                                    <img class="close" src="//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/plus-button.png">
+                                    <a onclick="logLink('landing:p90x:web:index:ola:bbod:guides:nutrition');" href="#nutrition">
+                                     <img class="open" src="//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/minus-button.png">
+                                    </a>
+                                </span>
+                        <div class="nutrition">
+                            <!--<h3>Guide 2:</h3>-->
+                            <h3>P90X <label class="reds">3-phase nutrition plan</label> </h3>
+                            <p>The diet fuels your muscles and helps your body recover more quickly from the intense P90X workouts. From delicious recipes to daily meal schedules, the P90X Nutrition Plan teaches you how to eat the right calories for maximum results.</p>
+                            <div class="nutrition_guide"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h2><span class="heading">Guide 3</span></h2>
+                        <span class="plus">
+                                    <img class="close" src="//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/plus-button.png">
+                                    <a onclick="logLink('landing:p90x:web:index:ola:bbod:guides:bringit');" href="#bringit">
+                                        <img class="open" src="//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/minus-button.png">
+                                    </a>
+                                </span>
+                        <div class="bringit">
+                            <!--<h3>Guide 3:</h3>-->
+                            <h3>"How to bring it"</h3>
+                            <p>This video gives you an overview of the complete P90X system. After all, P90X is more than just great workouts. It's also nutrition, proper supplementation and vitamins, and safety.</p>
+                            <div class="bringit_guide"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </body>
+
+    <script>
+
+    var parent = $('#toggle-view'),
+            delay = 400;
+    var isMobile = window.matchMedia("only screen and (max-width: 666px)");
+    var isTablet = window.matchMedia("only screen and (min-width: 667px)");
+    var effect = 'slide';
+    var options = { direction: 'left' };
+    var duration = 700;
+
+    $('li span', parent).click(function() {
+        $('li', parent).each(function(index, element) {
+            //reset each li to default state
+            toggleListElement(element, false);
+        });
+        var clickedListElement = $(this).closest('li');
+        // check to see if this li is not already being displayed
+        var showListElement = !($('div', clickedListElement).is(':visible'));
+//        console.log(showListElement);
+        toggleListElement(clickedListElement, showListElement);
+
+    });
+    function toggleListElement(element, show) {
+
+        if (isMobile.matches) {
+            if (show) {
+                $('div', element).slideDown(delay);
+                $('img.open', element).show();
+                $('img.close', element).hide();
+                $('h2', element).css("background-color", '#E00034');
+            } else {
+                $('div', element).slideUp(delay);
+                $('img.open', element).hide();
+                $('img.close', element).show();
+                $('h2', element).css("background-color", '#d3a600');
+            }
+
+        } else {
+            if (show) {
+                $('div', element).animate({width:'show'},900);
+                $('img.open', element).show();
+                $('img.close', element).hide();
+                $('h2', element).css("background-color", '#E00034');
+//                $(this).css("width", '75%');
+            } else {
+                $('div', element).animate({width:'hide'},900);
+                $('img.open', element).hide();
+                $('img.close', element).show();
+                $('h2', element).css("background-color", '#d3a600');
+//                $(this).siblings().css("width", '10%');
+            }
+
+
+        }
+
+    }
+
+</script>
+</html>

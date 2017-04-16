@@ -1,0 +1,339 @@
+section#guides {
+  background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/guides_bg_desktop.png") no-repeat center top;
+  background-size: cover;
+  padding: 2px 0;
+  overflow: hidden; }
+  section#guides .guides_headline {
+    font-size: 34px;
+    text-transform: uppercase;
+    padding: 30px 20px;
+    font-family: 'eurostile-extended', sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left; }
+    @media only screen and (min-width: 667px) {
+      section#guides .guides_headline {
+        text-align: left; }
+        section#guides .guides_headline br {
+          display: none; } }
+    @media only screen and (min-width: 960px) {
+      section#guides .guides_headline {
+        text-align: center; } }
+  section#guides #tablet_headline {
+    display: none; }
+    @media only screen and (min-width: 667px) {
+      section#guides #tablet_headline {
+        display: block; } }
+    @media only screen and (min-width: 960px) {
+      section#guides #tablet_headline {
+        display: none; } }
+  section#guides .guide_banner {
+    background-color: #d3a600;
+    width: auto;
+    height: 59px; }
+    section#guides .guide_banner .title {
+      color: white;
+      padding-top: 20px;
+      padding-left: 15px;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: 'eurostile-extended', sans-serif;
+      font-weight: bold; }
+  section#guides .guide_banner img {
+    float: right;
+    padding-right: 20px;
+    margin-top: -40px;
+    cursor: pointer; }
+  section#guides img.open {
+    display: none; }
+  @media only screen and (min-width: 667px) {
+    section#guides .guide_container {
+      padding-left: 52px;
+      margin: 0 auto;
+      text-align: center; } }
+  @media only screen and (min-width: 960px) {
+    section#guides .guide_container {
+      padding-left: 280px; } }
+  section#guides #toggle-view {
+    list-style: none;
+    font-family: arial;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  @media only screen and (min-width: 667px) {
+    section#guides #toggle-view li div.tony, section#guides div.nutrition, section#guides div.bringit {
+      float: left; } }
+  section#guides #toggle-view li:first-child h2 {
+    background-color: #E00034; }
+  section#guides #toggle-view li:first-child span img.open {
+    display: inline; }
+  section#guides #toggle-view li:first-child span img.close {
+    display: none; }
+  section#guides #toggle-view span img.close, section#guides img.open {
+    z-index: 2;
+    bottom: 59px;
+    right: 10px;
+    cursor: pointer; }
+    @media only screen and (min-width: 667px) {
+      section#guides #toggle-view span img.close, section#guides img.open {
+        position: relative;
+        float: left;
+        top: 340px;
+        right: 50px; } }
+  section#guides #toggle-view h2 {
+    background-color: #d3a600;
+    width: auto;
+    height: 59px;
+    color: white;
+    padding-top: 20px;
+    padding-left: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'eurostile-extended', sans-serif;
+    font-weight: bold; }
+    @media only screen and (min-width: 667px) {
+      section#guides #toggle-view h2 {
+        float: left;
+        position: relative;
+        z-index: 2;
+        top: -67px;
+        height: 430px;
+        width: 73px;
+        margin-left: -30px; } }
+  section#guides #toggle-view li h2:before {
+    content: "";
+    display: block;
+    box-shadow: 4px 22px 3px #888888;
+    width: 1px;
+    height: 387px;
+    left: -6px;
+    position: absolute;
+    top: 0px; }
+  section#guides #toggle-view span.heading {
+    font-size: 23px;
+    font-family: 'eurostile-extended', sans-serif;
+    color: white;
+    float: left;
+    position: relative;
+    left: 4px;
+    width: 227%;
+    cursor: pointer; }
+    @media only screen and (min-width: 667px) {
+      section#guides #toggle-view span.heading {
+        top: -11px; } }
+  section#guides h2 span {
+    font-color: #E00034; }
+    @media only screen and (min-width: 667px) {
+      section#guides h2 span {
+        -webkit-transform: rotate(-90deg) translateX(-100%);
+        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: rotate(-90deg) translateX(-100%);
+        /* IE 9 */
+        transform: rotate(-90deg) translateX(-100%);
+        -webkit-transform-origin: top left;
+        -ms-transform-origin: top left;
+        transform-origin: top left;
+        font-size: 28px;
+        font-family: 'eurostile-extended', sans-serif;
+        font-weight: bold;
+        font-color: #E00034; } }
+  section#guides #toggle-view h3 {
+    font-family: 'eurostile-extended', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+    width: 76%;
+    text-transform: uppercase; }
+    @media only screen and (min-width: 667px) {
+      section#guides #toggle-view h3 {
+        font-size: 28px; } }
+  section#guides #toggle-view div {
+    display: none; }
+  section#guides #toggle-view div.tony {
+    background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/guide_one_fitness_bg_mobile.png") no-repeat center top;
+    background-size: 100%;
+    position: relative;
+    font-color: black;
+    overflow: hidden;
+    height: 544px;
+    display: block;
+    width: 100%;
+    margin-bottom: -67px; }
+    @media only screen and (min-width: 667px) {
+      section#guides #toggle-view div.tony {
+        background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/guide_one_bg_desktop.png") no-repeat center top;
+        background-size: cover;
+        position: relative;
+        font-color: black;
+        overflow: hidden;
+        height: 430px;
+        display: block;
+        width: 60%;
+        margin-bottom: -67px;
+        right: 28px;
+        top: -50px; } }
+  @media only screen and (min-width: 667px) and (min-width: 960px) {
+    section#guides #toggle-view div.tony {
+      background-size: 100% 100%; } }
+
+    section#guides #toggle-view div.tony h3, section#guides #toggle-view div.tony p {
+      font-weight: bold;
+      text-align: left;
+      padding-left: 20px;
+      width: 80%; }
+    section#guides #toggle-view div.tony h3 {
+      font-family: 'eurostile-extended', sans-serif;
+      font-size: 22px; }
+    section#guides #toggle-view div.tony p {
+      font-family: 'din', sans-serif;
+      font-size: 18px; }
+  section#guides #toggle-view div.devices {
+    background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/fitness-guide-mobile_01.png") no-repeat center top;
+    background-size: 100%;
+    position: relative;
+    height: 510px;
+    top: 20px;
+    right: 10px;
+    display: block; }
+    @media only screen and (min-width: 667px) {
+      section#guides #toggle-view div.devices {
+        background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/fitness-guide-desktop.png") no-repeat center top;
+        background-size: 90%;
+        position: relative;
+        height: 510px;
+        top: 4px;
+        right: 24px;
+        display: block; } }
+    @media only screen and (min-width: 960px) {
+      section#guides #toggle-view div.devices {
+        right: 150px; } }
+  section#guides #toggle-view h3 p {
+    text-align: left; }
+  section#guides #toggle-view div.nutrition {
+    background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/guide_two_bg_nutrition_mobile.png") no-repeat center top;
+    background-size: 100%;
+    position: relative;
+    font-color: black;
+    overflow: hidden;
+    height: 544px;
+    display: none;
+    width: 100%;
+    margin-bottom: -67px; }
+    @media only screen and (min-width: 667px) {
+      section#guides #toggle-view div.nutrition {
+        text-align: center;
+        background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/nutrition-bg-desktop.png") no-repeat center top;
+        background-size: cover;
+        position: relative;
+        top: -50px;
+        font-color: black;
+        overflow: hidden;
+        height: 430px;
+        display: none;
+        width: 60%;
+        margin-bottom: -67px;
+        right: 28px;
+        top: -50px; } }
+    section#guides #toggle-view div.nutrition h3, section#guides #toggle-view div.nutrition p {
+      font-weight: bold;
+      text-align: left;
+      padding-left: 20px;
+      width: 80%; }
+    section#guides #toggle-view div.nutrition h3 {
+      font-family: 'eurostile-extended', sans-serif;
+      font-size: 22px; }
+    section#guides #toggle-view div.nutrition p {
+      font-family: 'din', sans-serif;
+      font-size: 18px; }
+  section#guides #toggle-view div.nutrition_guide {
+    background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/nutrition_guide_mobile_01.png") no-repeat center top;
+    background-size: 100%;
+    position: relative;
+    height: 510px;
+    top: 20px;
+    right: -4px; }
+    @media only screen and (min-width: 667px) {
+      section#guides #toggle-view div.nutrition_guide {
+        background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/nutrition_guide_desktop.png") no-repeat center top;
+        background-size: 90%;
+        position: relative;
+        height: 510px;
+        top: -3px;
+        right: -45px; } }
+  section#guides #toggle-view h3 p {
+    text-align: left; }
+  section#guides #toggle-view h3 {
+    line-height: 1.2; }
+  section#guides #toggle-view div.bringit {
+    background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/guide_three_bg_bringit_mobile.png") no-repeat center top;
+    background-size: 100%;
+    position: relative;
+    font-color: black;
+    overflow: hidden;
+    height: 544px;
+    display: none;
+    width: 100%;
+    margin-bottom: -67px; }
+    @media only screen and (min-width: 667px) {
+      section#guides #toggle-view div.bringit {
+        text-align: center;
+        background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/bringit_bg_desktop.png") no-repeat center top;
+        background-size: cover;
+        position: relative;
+        top: -50px;
+        font-color: black;
+        overflow: hidden;
+        height: 430px;
+        display: none;
+        width: 60%;
+        margin-bottom: -67px;
+        right: 28px;
+        top: -50px; } }
+    section#guides #toggle-view div.bringit h3, section#guides #toggle-view div.bringit p {
+      font-weight: bold;
+      text-align: left;
+      padding-left: 20px;
+      width: 84%; }
+    section#guides #toggle-view div.bringit h3 {
+      font-family: 'eurostile-extended', sans-serif;
+      font-size: 22px; }
+    section#guides #toggle-view div.bringit p {
+      font-family: 'din', sans-serif;
+      font-size: 18px; }
+  section#guides #toggle-view div.bringit_guide {
+    background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/bringit_devices_mobile.png") no-repeat center top;
+    background-size: 100%;
+    position: relative;
+    height: 510px;
+    top: 20px;
+    right: -4px; }
+    @media only screen and (min-width: 667px) {
+      section#guides #toggle-view div.bringit_guide {
+        background: url("//img1.beachbodyimages.com/beachbody/image/upload/bbweb/p90x-dvd/bringit_devices_desktop.png") no-repeat center top;
+        background-size: 90%;
+        position: relative;
+        height: 510px;
+        top: 33px;
+        right: -29px; } }
+    @media only screen and (min-width: 960px) {
+      section#guides #toggle-view div.bringit_guide {
+        background-size: 63%;
+        right: -180px; } }
+  section#guides label.reds {
+    color: #E00034; }
+  @media (max-width: 666px) {
+    section#guides li span.plus {
+      z-index: 2;
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+      top: 17px; }
+    section#guides li {
+      position: relative; }
+    section#guides h2 {
+      margin: 1px; }
+    section#guides div.tony {
+      top: 0px; } }
